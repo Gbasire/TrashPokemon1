@@ -1,6 +1,7 @@
 {
     "java.project.referencedLibraries": [
         "D:/CloudStation/Documents/Ecole/OC Informatique/Java/greenfoot-source-jar-3.6.1.1.jar",
-        "d:\\CloudStation\\Documents\\Ecole\\OC Informatique\\Java\\greenfoot-source-3.6.1.1.jar"
+        "d:\\CloudStation\\Documents\\Ecole\\OC Informatique\\Java\\greenfoot-source-3.6.1.1.jar",
+        "D:\\Dateien\\Code\\jar\\greenfoot.jar"
     ]
 }
