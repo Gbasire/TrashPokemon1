@@ -180,32 +180,24 @@ public class OverlayText extends Actor
     }
     public void removeThis()
     {
-        if(this.getWorld().getClass() == WorldTest.class)
-            ((WorldTest)getWorld()).removeOverlayText();
-        else if(this.getWorld().getClass() == WorldTown.class)
-            ((WorldTown)getWorld()).removeOverlayText();
-        else if(this.getWorld().getClass() == WorldRoute.class)
-            ((WorldRoute)getWorld()).removeOverlayText();
-        else if(this.getWorld().getClass() == WorldCenter.class)
-            ((WorldCenter)getWorld()).removeOverlayText();
-        else if(this.getWorld().getClass() == WorldPlayerRoom.class)
-            ((WorldPlayerRoom)getWorld()).removeOverlayText();
+        if(getWorld() instanceof OverlayWorld)
+            ((OverlayWorld)getWorld()).removeOverlayText();
     }
     public void checkWorld()
     {
-        if(this.getWorld().getClass() == WorldTest.class || this.getWorld().getClass() == WorldRoute.class)
+        if(getWorld().getClass() == WorldTest.class || getWorld().getClass() == WorldRoute.class)
         {
             GreenfootImage image = getImage();
             image.scale(600, 100);
             setImage(image);
         }
-        if(this.getWorld().getClass() == WorldTown.class)
+        if(getWorld().getClass() == WorldTown.class)
         {
             GreenfootImage image = getImage();
             image.scale(700, 115);
             setImage(image);
         }
-        if(this.getWorld().getClass() == WorldCenter.class || this.getWorld().getClass() == WorldPlayerRoom.class)
+        if(getWorld().getClass() == WorldCenter.class || getWorld().getClass() == WorldPlayerRoom.class)
         {
             GreenfootImage image = getImage();
             image.scale(480, 78);
@@ -214,11 +206,11 @@ public class OverlayText extends Actor
     }
     public void addTriangle()
     {
-        if(this.getWorld().getClass() == WorldTest.class || this.getWorld().getClass() == WorldRoute.class)
+        if(getWorld().getClass() == WorldTest.class || getWorld().getClass() == WorldRoute.class)
             getWorld().addObject(triangle, 560, 370);
-        if(this.getWorld().getClass() == WorldTown.class)
+        if(getWorld().getClass() == WorldTown.class)
             getWorld().addObject(triangle, 685, 545);
-        if(this.getWorld().getClass() == WorldCenter.class || this.getWorld().getClass() == WorldPlayerRoom.class)
+        if(getWorld().getClass() == WorldCenter.class || getWorld().getClass() == WorldPlayerRoom.class)
             getWorld().addObject(triangle, 460, 270);
     }
     public void stopPlayer()

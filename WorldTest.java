@@ -1,5 +1,4 @@
-import greenfoot.*;
-public class WorldTest extends World
+public class WorldTest extends OverlayWorld
 {
     public static int originalXValue = 300;
     public static int originalYValue = 200;
@@ -10,7 +9,7 @@ public class WorldTest extends World
     OverlayText overlaytext = new OverlayText();
     public WorldTest()
     {
-        super(600, 400, 1);
+        super(600, 400);
         setPaintOrder(OverlayTextTriangle.class, OverlayText.class, Boy.class, WorldObjects.class);
         prepareBoy();
         prepareData();
@@ -47,12 +46,10 @@ public class WorldTest extends World
             ), 300, 100);
         addObject(new ObjectText(ObjectText.sign, 2, "World Test", "bruh", null, null, null), 200, 100);
     }
+
+    @Override
     public void overlayText()
     {
         addObject(overlaytext, 300, 345);
-    }
-    public void removeOverlayText()
-    {
-        removeObject(overlaytext);
     }
 }

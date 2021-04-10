@@ -1,5 +1,4 @@
-import greenfoot.*;
-public class WorldRoute extends World
+public class WorldRoute extends OverlayWorld
 {
     Dust poussiere = new Dust();
     OverlayText overlaytext = new OverlayText();
@@ -12,7 +11,7 @@ public class WorldRoute extends World
     private int timer = 0;
     public WorldRoute()
     {
-        super(600, 400, 1);
+        super(600, 400);
         setPaintOrder(Transitions.class, ObjectBasicZone.class, OverlayTextTriangle.class, OverlayText.class, ObjectBasicOver.class, Boy.class, Dust.class);
         prepare();
         prepareTrees();
@@ -72,10 +71,12 @@ public class WorldRoute extends World
     {
         addObject(new Boy(), originalXValue, originalYValue);
     }
+    @Override
     public void overlayText()
     {
         addObject(overlaytext, 300, 345);
     }
+    @Override
     public void removeOverlayText()
     {
         removeObject(overlaytext);

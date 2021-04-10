@@ -1,5 +1,4 @@
-import greenfoot.*;
-public class WorldTown extends World
+public class WorldTown extends OverlayWorld
 {
     public static int originalXValue = 350;
     public static int originalYValue = 380;
@@ -11,7 +10,6 @@ public class WorldTown extends World
     OverlayText overlaytext = new OverlayText();
     public WorldTown()
     {
-        super(755, 570, 1);
         prepareTrees();
         prepareCenter();
         prepareHomePlayer();
@@ -112,12 +110,9 @@ public class WorldTown extends World
         addObject(new PokemonEmboar(), 0, 0);
         addObject(new PokemonGeodude(), 0, 0);
     }
+    @Override
     public void overlayText()
     {
         addObject(overlaytext, 378, 515);
-    }
-    public void removeOverlayText()
-    {
-        removeObject(overlaytext);
     }
 }

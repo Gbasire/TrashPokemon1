@@ -1,5 +1,4 @@
-import greenfoot.*;
-public class WorldPlayerRoom extends World
+public class WorldPlayerRoom extends OverlayWorld
 {
     public static int originalXValue = 250;
     public static int originalYValue = 270;
@@ -8,7 +7,7 @@ public class WorldPlayerRoom extends World
     OverlayText overlaytext = new OverlayText();
     public WorldPlayerRoom()
     {
-        super(500, 300, 1);
+        super(500, 300);
         setPaintOrder(OverlayTextTriangle.class, OverlayText.class, Boy.class);
         prepare();
         prepareData();
@@ -52,12 +51,10 @@ public class WorldPlayerRoom extends World
     {
         addObject(new Boy(), originalXValue, originalYValue);
     }
+
+    @Override
     public void overlayText()
     {
         addObject(overlaytext, 250, 250);
-    }
-    public void removeOverlayText()
-    {
-        removeObject(overlaytext);
     }
 }

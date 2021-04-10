@@ -1,5 +1,4 @@
-import greenfoot.*;
-public class WorldCenter extends World
+public class WorldCenter extends OverlayWorld
 {
     public static int originalXValue = 250;
     public static int originalYValue = 270;
@@ -7,10 +6,9 @@ public class WorldCenter extends World
     public static boolean npc2WasTaken;
     private int timer = 0;
     public static String previousworld;
-    OverlayText overlaytext = new OverlayText();
     public WorldCenter()
     {
-        super(500, 300, 1);
+        super(500, 300);
         setPaintOrder(ObjectBasicZone.class, OverlayTextTriangle.class, OverlayText.class, Boy.class);
         prepare();
         preparePokemonData();
@@ -41,7 +39,8 @@ public class WorldCenter extends World
             "youngGirl", npc1WasTaken, false, "down", "potion", 2, 1, 3, 1,  
             "Here is a potion !", "I'm in a good day today !", "Hello !", null, null, 
             "I already gave you some potions !", null), 30, 85);
-        addObject(new ObjectText(ObjectText.centerPC, "the PC isn't available yet !"), 400, 40);addObject(new Carpet(), 250, 300);
+        addObject(new ObjectText(ObjectText.centerPC, "the PC isn't available yet !"), 400, 40);
+        addObject(new Carpet(), 250, 300);
         addObject(new ObjectBasicZone(ObjectBasicZone.center), 250, 150);
     }
     public void prepareData()
@@ -80,12 +79,9 @@ public class WorldCenter extends World
             overlaytext.nursetime = 150;
         }
     }
+    @Override
     public void overlayText()
     {
         addObject(overlaytext, 250, 250);
-    }
-    public void removeOverlayText()
-    {
-        removeObject(overlaytext);
     }
 }
