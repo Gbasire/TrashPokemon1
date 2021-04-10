@@ -1,4 +1,3 @@
-import greenfoot.*;
 public class BasePlayer extends Battle
 {
     private int time = 30;

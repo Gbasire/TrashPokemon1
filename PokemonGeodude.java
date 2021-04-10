@@ -1,4 +1,3 @@
-import greenfoot.*;
 public class PokemonGeodude extends Pokemons
 {
     public final int basehp = 40;

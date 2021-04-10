@@ -1,4 +1,3 @@
-import greenfoot.*;
 public class Pokemons extends Battle
 {
     public int basehp;

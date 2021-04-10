@@ -1,4 +1,3 @@
-import greenfoot.*;
 public class MenuTrashText extends MenuGame
 {
     public void act() 

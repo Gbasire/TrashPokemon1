@@ -1,4 +1,3 @@
-import greenfoot.*;
 public class OverlayFightText extends Overlay
 {
     public int appeartime;

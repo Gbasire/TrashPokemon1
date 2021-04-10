@@ -1,4 +1,3 @@
-import greenfoot.*;
 public class ObjectTreeTop extends ObjectBasicOver
 {
     public ObjectTreeTop()

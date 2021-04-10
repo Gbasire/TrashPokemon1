@@ -1,4 +1,3 @@
-import greenfoot.*;
 public class HPEnemy extends Battle
 {
     public void act() 

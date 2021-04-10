@@ -1,4 +1,3 @@
-import greenfoot.*;
 public class AttacksEnemy extends Battle
 {
     public int time;

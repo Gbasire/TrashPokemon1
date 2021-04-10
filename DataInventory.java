@@ -1,4 +1,3 @@
-import greenfoot.*;
 public class DataInventory extends Data
 {
     public static int potionnumber;

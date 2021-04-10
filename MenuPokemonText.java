@@ -1,4 +1,3 @@
-import greenfoot.*;
 public class MenuPokemonText extends MenuGame
 {
     MenuPoweredText menupoweredtext = new MenuPoweredText();

@@ -1,4 +1,3 @@
-import greenfoot.*;
 public class MenuPoweredText extends MenuGame
 {
     private int time = 0;

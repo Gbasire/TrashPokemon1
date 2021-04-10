@@ -1,4 +1,3 @@
-import greenfoot.*;
 public class HPPlayer extends Battle
 {
     public void act() 

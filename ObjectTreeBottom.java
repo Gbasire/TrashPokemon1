@@ -1,4 +1,3 @@
-import greenfoot.*;
 public class ObjectTreeBottom extends ObjectSimple
 {
     public ObjectTreeBottom()

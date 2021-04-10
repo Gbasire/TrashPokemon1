@@ -1,4 +1,3 @@
-import greenfoot.*;
 public class PokemonEmboar extends Pokemons
 {
     public final int basehp = 110;
