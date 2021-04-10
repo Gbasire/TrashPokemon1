@@ -46,7 +46,7 @@ public abstract class Attacks extends Battle
             DataPokemon.attacktype = type;
             DataPokemon.attackeffectiveness = effectiveness;
         }
-        else if(time < 0)
+        else if(time <= 0)
             getWorld().removeObject(this);
         else
         {
