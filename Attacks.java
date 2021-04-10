@@ -50,8 +50,9 @@ public abstract class Attacks extends Battle
             getWorld().removeObject(this);
         else
         {
-            int imageNr = (MAX_TIME - time) * getImageCount() / MAX_TIME;
-            setImage(getImage(imageNr));
+            int imageCount = getImageCount();
+            int imageNr = (MAX_TIME - time) * imageCount / MAX_TIME;
+            setImage(getImage(Math.min(imageNr, imageCount - 1)));
         }
     }
 
