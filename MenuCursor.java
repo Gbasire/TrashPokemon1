@@ -98,19 +98,19 @@ public class MenuCursor extends Menu
     }
     public void checkWorld()
     {
-        if(this.getWorld().getClass() == WorldMenuMain.class)
+        if(getWorld().getClass() == WorldMenuMain.class)
         {
             GreenfootImage image = getImage();
             image.scale(564, 70);
             setImage(image);
         }
-        if(this.getWorld().getClass() == WorldMenuOptions.class)
+        if(getWorld().getClass() == WorldMenuOptions.class)
         {
             GreenfootImage image = getImage();
             image.scale(410, 70);
             setImage(image);
         }
-        if(this.getWorld().getClass() == WorldMenuOptions.class && Greenfoot.isKeyDown("escape"))
+        if(getWorld().getClass() == WorldMenuOptions.class && Greenfoot.isKeyDown("escape"))
             Greenfoot.setWorld(new WorldMenuMain());
     }
 }

@@ -193,28 +193,28 @@ public class ObjectNPCItem extends WorldObjects
     }
     public void sendWorldPlace()
     {
-        if(this.getWorld().getClass() == WorldTest.class)
+        if(getWorld().getClass() == WorldTest.class)
         {
             if(place == 1)
                 WorldTest.npc1WasTaken = true;
             else if(place == 2)
                 WorldTest.npc2WasTaken = true;
         }
-        else if(this.getWorld().getClass() == WorldTown.class)
+        else if(getWorld().getClass() == WorldTown.class)
         {
             if(place == 1)
                 WorldTown.npc1WasTaken = true;
             else if(place == 2)
                 WorldTown.npc2WasTaken = true;
         }
-        else if(this.getWorld().getClass() == WorldRoute.class)
+        else if(getWorld().getClass() == WorldRoute.class)
         {
             if(place == 1)
                 WorldRoute.npc1WasTaken = true;
             else if(place == 2)
                 WorldRoute.npc2WasTaken = true;
         }
-        else if(this.getWorld().getClass() == WorldCenter.class)
+        else if(getWorld().getClass() == WorldCenter.class)
         {
             if(place == 1)
                 WorldCenter.npc1WasTaken = true;

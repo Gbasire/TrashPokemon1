@@ -167,36 +167,36 @@ public class Boy extends Actor {
     }
 
     public void setVariables() {
-        if (this.getWorld().getClass() == WorldRoute.class) {
+        if (getWorld().getClass() == WorldRoute.class) {
             originalX = getX();
             originalY = getY();
         }
-        if (this.getWorld().getClass() == WorldTown.class) {
+        if (getWorld().getClass() == WorldTown.class) {
             originalX1 = getX();
             originalY1 = getY();
         }
-        if (this.getWorld().getClass() == WorldCenter.class) {
+        if (getWorld().getClass() == WorldCenter.class) {
             originalX2 = getX();
             originalY2 = getY();
         }
-        if (this.getWorld().getClass() == WorldPlayerRoom.class) {
+        if (getWorld().getClass() == WorldPlayerRoom.class) {
             originalX3 = getX();
             originalY3 = getY();
         }
-        if (this.getWorld().getClass() == WorldTest.class) {
+        if (getWorld().getClass() == WorldTest.class) {
             originalX9 = getX();
             originalY9 = getY();
         }
     }
 
     public void checkBorder() {
-        if (this.getWorld().getClass() == WorldRoute.class) {
+        if (getWorld().getClass() == WorldRoute.class) {
             if (getY() > 390) {
                 Greenfoot.setWorld(new WorldTown());
                 previousworld = "ROUTE";
             }
         }
-        if (this.getWorld().getClass() == WorldTown.class) {
+        if (getWorld().getClass() == WorldTown.class) {
             if (getY() < 10) {
                 Greenfoot.setWorld(new WorldRoute());
                 previousworld = "TOWN";
@@ -205,40 +205,40 @@ public class Boy extends Actor {
     }
 
     public void hitBox() {
-        if (this.getWorld().getClass() == WorldRoute.class)
+        if (getWorld().getClass() == WorldRoute.class)
             setLocation(originalX, originalY);
-        else if (this.getWorld().getClass() == WorldTown.class)
+        else if (getWorld().getClass() == WorldTown.class)
             setLocation(originalX1, originalY1);
-        else if (this.getWorld().getClass() == WorldCenter.class)
+        else if (getWorld().getClass() == WorldCenter.class)
             setLocation(originalX2, originalY2);
-        else if (this.getWorld().getClass() == WorldPlayerRoom.class)
+        else if (getWorld().getClass() == WorldPlayerRoom.class)
             setLocation(originalX3, originalY3);
-        else if (this.getWorld().getClass() == WorldTest.class)
+        else if (getWorld().getClass() == WorldTest.class)
             setLocation(originalX9, originalY9);
     }
     public void setBoyLocation()
     {
-        if(this.getWorld().getClass() == WorldRoute.class)
+        if(getWorld().getClass() == WorldRoute.class)
         {
             WorldRoute.originalXValue = originalX;
             WorldRoute.originalYValue = originalY;
         }
-        if(this.getWorld().getClass() == WorldTown.class)
+        if(getWorld().getClass() == WorldTown.class)
         {
             WorldTown.originalXValue = originalX1;
             WorldTown.originalYValue = originalY1;
         }
-        if(this.getWorld().getClass() == WorldCenter.class)
+        if(getWorld().getClass() == WorldCenter.class)
         {
             WorldCenter.originalXValue = originalX2;
             WorldCenter.originalYValue = originalY2;
         }
-        if(this.getWorld().getClass() == WorldPlayerRoom.class)
+        if(getWorld().getClass() == WorldPlayerRoom.class)
         {
             WorldPlayerRoom.originalXValue = originalX3;
             WorldPlayerRoom.originalYValue = originalY3;
         }
-        if(this.getWorld().getClass() == WorldTest.class)
+        if(getWorld().getClass() == WorldTest.class)
         {
             WorldTest.originalXValue = originalX9;
             WorldTest.originalYValue = originalY9;

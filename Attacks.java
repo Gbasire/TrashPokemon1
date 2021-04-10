@@ -5,8 +5,4 @@ public class Attacks extends Battle
     public int accurracy;
     public String type;
     public String sound;
-    public void act()
-    {
-
-    }
 }

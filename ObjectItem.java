@@ -41,21 +41,21 @@ public class ObjectItem extends WorldObjects
     }
     public void sendWorldPlace()
     {
-        if(this.getWorld().getClass() == WorldTest.class)
+        if(getWorld().getClass() == WorldTest.class)
         {
             if(place == 1)
                 WorldTest.object1WasTaken = true;
             else if(place == 2)
                 WorldTest.object2WasTaken = true;
         }
-        else if(this.getWorld().getClass() == WorldTown.class)
+        else if(getWorld().getClass() == WorldTown.class)
         {
             if(place == 1)
                 WorldTown.object1WasTaken = true;
             else if(place == 2)
                 WorldTown.object2WasTaken = true;
         }
-        else if(this.getWorld().getClass() == WorldRoute.class)
+        else if(getWorld().getClass() == WorldRoute.class)
         {
             if(place == 1)
                 WorldRoute.object1WasTaken = true;

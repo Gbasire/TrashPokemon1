@@ -4,9 +4,9 @@ public class Carpet extends ObjectSpecial
     public void act()
     {
         checkPlayer();
-        if(this.getWorld().getClass() == WorldCenter.class)
+        if(getWorld().getClass() == WorldCenter.class)
             leaveCenter();
-        else if(this.getWorld().getClass() == WorldPlayerRoom.class)
+        else if(getWorld().getClass() == WorldPlayerRoom.class)
             leavePlayerHouse();
     }
     public void leaveCenter()

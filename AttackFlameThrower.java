@@ -18,11 +18,11 @@ public class AttackFlameThrower extends Attacks
     static GreenfootImage image15 = new GreenfootImage("Attacks/FlameThrower/attack15.png");
     static GreenfootImage image16 = new GreenfootImage("Attacks/FlameThrower/attack16.png");
     static GreenfootImage image17 = new GreenfootImage("Attacks/FlameThrower/attack17.png");
-    public final int pp = 15;
-    public final int power = 95;
-    public final int accuracy = 100;
-    public final String category = "PHYSICAL";
-    public final String type = "FIRE";
+    public static final int pp = 15;
+    public static final int power = 95;
+    public static final int accuracy = 100;
+    public static final String category = "PHYSICAL";
+    public static final String type = "FIRE";
     public static double effectiveness;
     private int time = 49;
     public void act()

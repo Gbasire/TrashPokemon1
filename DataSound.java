@@ -26,7 +26,7 @@ public class DataSound extends Data
     }
     public void checkWorld()
     {
-        if(this.getWorld().getClass() == WorldCenter.class)
+        if(getWorld().getClass() == WorldCenter.class)
         {
             if(musicCenter.isPlaying() == false) 
             {
@@ -37,7 +37,7 @@ public class DataSound extends Data
                 musicWildBattle.stop();
             }
         }
-        if(this.getWorld().getClass() == WorldRoute.class)
+        if(getWorld().getClass() == WorldRoute.class)
         {
             if(musicRoute.isPlaying() == false && battlelaunched == false) 
             {
@@ -48,7 +48,7 @@ public class DataSound extends Data
                 musicWildBattle.stop();
             }
         }
-        if(this.getWorld().getClass() == WorldTown.class)
+        if(getWorld().getClass() == WorldTown.class)
         {
             if(musicTown.isPlaying() == false) 
             {
@@ -59,7 +59,7 @@ public class DataSound extends Data
                 musicWildBattle.stop();
             }
         }
-        if(this.getWorld().getClass() == WorldMenuGame.class)
+        if(getWorld().getClass() == WorldMenuGame.class)
         {
             if(musicTitleScreen.isPlaying() == false) 
             {
@@ -70,9 +70,9 @@ public class DataSound extends Data
                 musicWildBattle.stop();
             }
         }
-        if(this.getWorld().getClass() == WorldMenuMain.class)
+        if(getWorld().getClass() == WorldMenuMain.class)
             musicTitleScreen.stop();
-        if(this.getWorld().getClass() == WorldWildBattle.class)
+        if(getWorld().getClass() == WorldWildBattle.class)
         {
             battlelaunched = false;
             wildBattle();

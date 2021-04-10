@@ -22,9 +22,9 @@ public class DataInventory extends Data
     }
     public void sendData()
     {
-        if(this.getWorld().getClass() == WorldWildBattle.class)
+        if(getWorld().getClass() == WorldWildBattle.class)
             ((WorldWildBattle)getWorld()).potionnumber = potionnumber;
-        if(this.getWorld().getClass() == WorldWildBattle.class)
+        if(getWorld().getClass() == WorldWildBattle.class)
             ((WorldWildBattle)getWorld()).superpotionnumber = superpotionnumber;
     }
 }
