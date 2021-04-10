@@ -1,7 +1,7 @@
 import greenfoot.*;
 public class AttackLowSweep extends Attacks
 {
-    private static final GreenfootImage[] IMAGES = new GreenfootImage[17];
+       private static final GreenfootImage[] IMAGES = new GreenfootImage[17];
     static
     {
         for(int i=0; i<IMAGES.length; i++)
