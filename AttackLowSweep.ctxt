@@ -1,7 +1,11 @@
 #BlueJ class context
 comment0.target=AttackLowSweep
 comment1.params=
-comment1.target=void\ act()
-comment2.params=
-comment2.target=void\ checkEnemyPokemon()
-numComments=3
+comment1.target=AttackLowSweep()
+comment2.params=i
+comment2.target=greenfoot.GreenfootImage\ getImage(int)
+comment3.params=
+comment3.target=int\ getImageCount()
+comment4.params=
+comment4.target=double\ checkEnemyPokemonAndGetEffectiveness()
+numComments=5
