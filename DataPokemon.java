@@ -52,12 +52,11 @@ public class DataPokemon extends Data
     }
     public void attack()
     {
-        DataWildPokemon wildpokemon = (DataWildPokemon)getWorld().getObjects(DataWildPokemon.class).get(0);
         int damage = attackpower;
         if(attackcategory == "PHYSICAL")
-            damage = damage * attack/wildpokemon.defense;
+            damage = damage * attack/DataWildPokemon.defense;
         else if(attackcategory == "SPECIAL")
-            damage = damage * specialattack/wildpokemon.specialdefense;
+            damage = damage * specialattack/DataWildPokemon.specialdefense;
         if(attackeffectiveness == 2)
             damage *= 2;
         else if(attackeffectiveness == 0.5)
@@ -69,11 +68,11 @@ public class DataPokemon extends Data
             damage = 1;
         if(damage > 0)
         {
-            wildpokemon.hp = wildpokemon.hp - damage;
+            DataWildPokemon.hp = DataWildPokemon.hp - damage;
             HPEnemyBar hpbar = (HPEnemyBar)getWorld().getObjects(HPEnemyBar.class).get(0);
             hpbar.damage = damage;
         }
-        if(wildpokemon.hp < 1)
+        if(DataWildPokemon.hp < 1)
         {
             PokemonEnemy pokemonenemy = (PokemonEnemy)getWorld().getObjects(PokemonEnemy.class).get(0);
             pokemonenemy.time = 1;

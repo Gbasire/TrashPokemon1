@@ -38,8 +38,7 @@ public class ButtonPotion extends ButtonsObjects
             oft.healingamount = healing;
             oft.healingtime = 150;
             CursorFight.isFighting = true;
-            DataInventory datainventory = getWorld().getObjects(DataInventory.class).get(0);
-            datainventory.usedObject("potion", 1);
+            DataInventory.usedObject("potion", 1);
             canuse = false;
         }
     }

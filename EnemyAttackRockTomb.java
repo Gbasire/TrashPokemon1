@@ -42,13 +42,12 @@ public class EnemyAttackRockTomb extends AttacksEnemy
                 oft.enemyattack = "RockTomb";
                 oft.enemyattacktime = 150;
                 oft.enemyeffective = effectiveness;
-                DataWildPokemon dwp = getWorld().getObjects(DataWildPokemon.class).get(0);
-                dwp.attackpower = power;
-                dwp.attackpp = pp;
-                dwp.attackaccuracy = accuracy;
-                dwp.attackcategory = category;
-                dwp.attacktype = type;
-                dwp.attackeffectiveness = effectiveness;
+                DataWildPokemon.attackpower = power;
+                DataWildPokemon.attackpp = pp;
+                DataWildPokemon.attackaccuracy = accuracy;
+                DataWildPokemon.attackcategory = category;
+                DataWildPokemon.attacktype = type;
+                DataWildPokemon.attackeffectiveness = effectiveness;
             }
             else if(time == 45)
             {
@@ -126,13 +125,12 @@ public class EnemyAttackRockTomb extends AttacksEnemy
                 OverlayFightText oft = getWorld().getObjects(OverlayFightText.class).get(0);
                 oft.enemyattack = "RockTomb";
                 oft.enemyattacktime = 150;
-                DataWildPokemon dwp = getWorld().getObjects(DataWildPokemon.class).get(0);
-                dwp.attackpower = power;
-                dwp.attackpp = pp;
-                dwp.attackaccuracy = accuracy;
-                dwp.attackcategory = category;
-                dwp.attacktype = type;
-                dwp.attackeffectiveness = effectiveness;
+                DataWildPokemon.attackpower = power;
+                DataWildPokemon.attackpp = pp;
+                DataWildPokemon.attackaccuracy = accuracy;
+                DataWildPokemon.attackcategory = category;
+                DataWildPokemon.attacktype = type;
+                DataWildPokemon.attackeffectiveness = effectiveness;
             }
             else if(time == 45)
             {
@@ -202,10 +200,9 @@ public class EnemyAttackRockTomb extends AttacksEnemy
     }
     public void checkEnemyPokemon()
     {
-        DataPokemon dp = getWorld().getObjects(DataPokemon.class).get(0);
-        if(dp.type == "FIGHT" || dp.type == "GROUND" || dp.type == "STEEL")
+        if(DataPokemon.type == "FIGHT" || DataPokemon.type == "GROUND" || DataPokemon.type == "STEEL")
             effectiveness = 0.5;
-        else if(dp.type == "FIRE" || dp.type == "BUG" || dp.type == "ICE" || dp.type == "FLYING")
+        else if(DataPokemon.type == "FIRE" || DataPokemon.type == "BUG" || DataPokemon.type == "ICE" || DataPokemon.type == "FLYING")
             effectiveness = 2;
         else
             effectiveness = 1;

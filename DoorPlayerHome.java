@@ -17,7 +17,6 @@ public class DoorPlayerHome extends ObjectSpecial
     }
     public void interact()
     {
-        Boy boy = (Boy)getWorld().getObjects(Boy.class).get(0);
         if(isTouching(Boy.class) && playery < getY() + objectCenter)
         {
             time = 10;
@@ -39,17 +38,17 @@ public class DoorPlayerHome extends ObjectSpecial
         boy.speed = 0;
         enterTime--;
         if(enterTime == 49)
-            boy.setImage(boy.up);
+            boy.setImage(Boy.up);
         else if(enterTime == 35)
-            boy.setImage(boy.uprun);
+            boy.setImage(Boy.uprun);
         else if(enterTime == 22)
-            boy.setImage(boy.up);
+            boy.setImage(Boy.up);
         else if(enterTime == 11)
-            boy.setImage(boy.uprun);
+            boy.setImage(Boy.uprun);
         else if(enterTime == 0)
         {
-            boy.originalX1 = 165;
-            boy.originalY1 = 524;
+            Boy.originalX1 = 165;
+            Boy.originalY1 = 524;
             boy.setBoyLocation();
             Greenfoot.setWorld(new WorldPlayerRoom());
         }

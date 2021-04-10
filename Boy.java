@@ -254,28 +254,28 @@ public class Boy extends Actor
     {
         if(this.getWorld().getClass() == WorldRoute.class)
         {
-            ((WorldRoute)getWorld()).originalXValue = originalX;
-            ((WorldRoute)getWorld()).originalYValue = originalY;
+            WorldRoute.originalXValue = originalX;
+            WorldRoute.originalYValue = originalY;
         }
         if(this.getWorld().getClass() == WorldTown.class)
         {
-            ((WorldTown)getWorld()).originalXValue = originalX1;
-            ((WorldTown)getWorld()).originalYValue = originalY1;
+            WorldTown.originalXValue = originalX1;
+            WorldTown.originalYValue = originalY1;
         }
         if(this.getWorld().getClass() == WorldCenter.class)
         {
-            ((WorldCenter)getWorld()).originalXValue = originalX2;
-            ((WorldCenter)getWorld()).originalYValue = originalY2;
+            WorldCenter.originalXValue = originalX2;
+            WorldCenter.originalYValue = originalY2;
         }
         if(this.getWorld().getClass() == WorldPlayerRoom.class)
         {
-            ((WorldPlayerRoom)getWorld()).originalXValue = originalX3;
-            ((WorldPlayerRoom)getWorld()).originalYValue = originalY3;
+            WorldPlayerRoom.originalXValue = originalX3;
+            WorldPlayerRoom.originalYValue = originalY3;
         }
         if(this.getWorld().getClass() == WorldTest.class)
         {
-            ((WorldTest)getWorld()).originalXValue = originalX9;
-            ((WorldTest)getWorld()).originalYValue = originalY9;
+            WorldTest.originalXValue = originalX9;
+            WorldTest.originalYValue = originalY9;
         }
     }
 }

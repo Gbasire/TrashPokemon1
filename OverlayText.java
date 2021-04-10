@@ -225,7 +225,7 @@ public class OverlayText extends Actor
     {
         Boy boy = getWorld().getObjects(Boy.class).get(0);
         boy.speed = 0;
-        boy.setImage(boy.lastimage);
+        boy.setImage(Boy.lastimage);
     }
     public void resumePlayer()
     {

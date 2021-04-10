@@ -30,7 +30,7 @@ public class TransitionIn extends Transitions
         if(time == 60)
         {
             setImage(image2);
-            datasound.battlelaunched = true;
+            DataSound.battlelaunched = true;
         }
         else if(time == 56)
             setImage(image3);

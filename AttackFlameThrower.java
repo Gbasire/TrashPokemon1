@@ -39,13 +39,12 @@ public class AttackFlameThrower extends Attacks
             oft.playerattack = "FlameThrower";
             oft.playerattacktime = 150;
             oft.playereffective = effectiveness;
-            DataPokemon dp = getWorld().getObjects(DataPokemon.class).get(0);
-            dp.attackpower = power;
-            dp.attackpp = pp;
-            dp.attackaccuracy = accuracy;
-            dp.attackcategory = category;
-            dp.attacktype = type;
-            dp.attackeffectiveness = effectiveness;
+            DataPokemon.attackpower = power;
+            DataPokemon.attackpp = pp;
+            DataPokemon.attackaccuracy = accuracy;
+            DataPokemon.attackcategory = category;
+            DataPokemon.attacktype = type;
+            DataPokemon.attackeffectiveness = effectiveness;
         }
         else if(time == 45)
         {
@@ -114,10 +113,9 @@ public class AttackFlameThrower extends Attacks
     }
     public void checkEnemyPokemon()
     {
-        DataWildPokemon dwp = getWorld().getObjects(DataWildPokemon.class).get(0);
-        if(dwp.type == "ROCK" || dwp.type == "WATER" || dwp.type == "FIRE" || dwp.type == "DRAGON")
+        if(DataWildPokemon.type == "ROCK" || DataWildPokemon.type == "WATER" || DataWildPokemon.type == "FIRE" || DataWildPokemon.type == "DRAGON")
             effectiveness = 0.5;
-        else if(dwp.type == "GRASS" || dwp.type == "BUG" || dwp.type == "ICE" || dwp.type == "STEEL")
+        else if(DataWildPokemon.type == "GRASS" || DataWildPokemon.type == "BUG" || DataWildPokemon.type == "ICE" || DataWildPokemon.type == "STEEL")
             effectiveness = 2;
         else
             effectiveness = 1;

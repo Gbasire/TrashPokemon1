@@ -34,9 +34,8 @@ public class HPPlayerBar extends Battle
     }
     public void checkHP()
     {
-        DataPokemon datapokemon = (DataPokemon)getWorld().getObjects(DataPokemon.class).get(0);
-        basehp = datapokemon.basehp;
-        hp = datapokemon.hp;
+        basehp = DataPokemon.basehp;
+        hp = DataPokemon.hp;
     }
     public void animate()
     {

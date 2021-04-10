@@ -38,13 +38,13 @@ public class AttackLowSweep extends Attacks
             OverlayFightText oft = getWorld().getObjects(OverlayFightText.class).get(0);
             oft.playerattack = "LowSweep";
             oft.playerattacktime = 150;
-            oft.playereffective = effectiveness;DataPokemon dp = getWorld().getObjects(DataPokemon.class).get(0);
-            dp.attackpower = power;
-            dp.attackpp = pp;
-            dp.attackaccuracy = accuracy;
-            dp.attackcategory = category;
-            dp.attacktype = type;
-            dp.attackeffectiveness = effectiveness;
+            oft.playereffective = effectiveness;
+            DataPokemon.attackpower = power;
+            DataPokemon.attackpp = pp;
+            DataPokemon.attackaccuracy = accuracy;
+            DataPokemon.attackcategory = category;
+            DataPokemon.attacktype = type;
+            DataPokemon.attackeffectiveness = effectiveness;
         }
         else if(time == 45)
         {
@@ -113,10 +113,9 @@ public class AttackLowSweep extends Attacks
     }
     public void checkEnemyPokemon()
     {
-        DataWildPokemon dwp = getWorld().getObjects(DataWildPokemon.class).get(0);
-        if(dwp.type == "POISON" || dwp.type == "FLYING" || dwp.type == "BUG" || dwp.type == "PSYCHIC")
+        if(DataWildPokemon.type == "POISON" || DataWildPokemon.type == "FLYING" || DataWildPokemon.type == "BUG" || DataWildPokemon.type == "PSYCHIC")
             effectiveness = 0.5;
-        else if(dwp.type == "NORMAL" || dwp.type == "DARK" || dwp.type == "ICE" || dwp.type == "STEEL" || dwp.type == "ROCK")
+        else if(DataWildPokemon.type == "NORMAL" || DataWildPokemon.type == "DARK" || DataWildPokemon.type == "ICE" || DataWildPokemon.type == "STEEL" || DataWildPokemon.type == "ROCK")
             effectiveness = 2;
         else
             effectiveness = 1;

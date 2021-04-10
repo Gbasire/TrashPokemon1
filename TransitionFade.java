@@ -36,26 +36,24 @@ public class TransitionFade extends Transitions
         if(time == 3)
         {
             if(this.getWorld().getClass() == WorldWildBattle.class
-            && ((DataPokemon)getWorld().getObjects(DataPokemon.class).get(0)).hp > 0 
+            && DataPokemon.hp > 0 
             && Boy.previousworld == "ROUTE")
                 DataSound.effectBattleRun.play();
             else if(this.getWorld().getClass() == WorldWildBattle.class
-            && ((DataPokemon)getWorld().getObjects(DataPokemon.class)
-            .get(0)).hp < 1)
+            && DataPokemon.hp < 1)
                 DataSound.effectBattleRun.play();
         }
         else if(time == 252)
         {
             if(this.getWorld().getClass() == WorldWildBattle.class
-            && ((DataPokemon)getWorld().getObjects(DataPokemon.class).get(0)).hp > 0 
+            && DataPokemon.hp > 0 
             && Boy.previousworld == "ROUTE")
             {
                 Boy.previousworld = "WILDBATTLE";
                 Greenfoot.setWorld(new WorldRoute());
             }
             else if(this.getWorld().getClass() == WorldWildBattle.class
-            && ((DataPokemon)getWorld().getObjects(DataPokemon.class)
-            .get(0)).hp < 1)
+            && DataPokemon.hp < 1)
                 Greenfoot.setWorld(new WorldCenter());
             else if(this.getWorld().getClass() == WorldMenuGame.class)
                 Greenfoot.setWorld(new WorldMenuMain());

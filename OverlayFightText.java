@@ -184,7 +184,7 @@ public class OverlayFightText extends Overlay
         if(healingtime == 50)
         {
             DataPokemon dp = getWorld().getObjects(DataPokemon.class).get(0);
-            dp.objecthealing = healingamount;
+            DataPokemon.objecthealing = healingamount;
             dp.useHealing();
             resetAnimation();
             playerHealingText = playerpokemon + " gains " + healingamount + " hp !";
