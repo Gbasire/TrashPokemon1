@@ -38,8 +38,7 @@ public class ButtonSuperPotion extends ButtonsObjects
             oft.healingamount = healing;
             oft.healingtime = 150;
             CursorFight.isFighting = true;
-            DataInventory datainventory = getWorld().getObjects(DataInventory.class).get(0);
-            datainventory.usedObject("super potion", 1);
+            DataInventory.usedObject("super potion", 1);
             canuse = false;
         }
     }
