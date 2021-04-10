@@ -264,6 +264,11 @@ dependency152.to=MenuControls
 dependency152.type=UsesDependency
 dependency153.from=WorldMenuMain
 dependency153.to=DataSound
+<<<<<<< HEAD
+=======
+dependency153.from=TransitionFade
+dependency153.to=WorldRoute
+>>>>>>> b619705d8f6a8eda052863c50fa877cc33c8e71d
 dependency153.type=UsesDependency
 dependency154.from=TransitionFade
 dependency154.to=WorldRoute
@@ -516,12 +521,26 @@ dependency228.to=WorldCenter
 dependency228.type=UsesDependency
 dependency229.from=Boy
 dependency229.to=WorldPlayerRoom
+<<<<<<< HEAD
+=======
+dependency229.to=TallGrass
+>>>>>>> b619705d8f6a8eda052863c50fa877cc33c8e71d
 dependency229.type=UsesDependency
 dependency23.from=WorldPlayerRoom
 dependency23.to=ObjectSimple
 dependency23.type=UsesDependency
 dependency230.from=Boy
 dependency230.to=WorldTest
+<<<<<<< HEAD
+=======
+dependency230.type=UsesDependency
+dependency231.from=DataInventory
+dependency231.to=WorldWildBattle
+dependency231.type=UsesDependency
+dependency232.from=DataWildPokemon
+dependency232.to=EnemyAttackRockTomb
+dependency230.to=WorldCenter
+>>>>>>> b619705d8f6a8eda052863c50fa877cc33c8e71d
 dependency230.type=UsesDependency
 dependency231.from=DataInventory
 dependency231.to=WorldWildBattle
@@ -540,6 +559,19 @@ dependency235.to=PokemonPlayer
 dependency235.type=UsesDependency
 dependency236.from=DataWildPokemon
 dependency236.to=PokemonGeodude
+<<<<<<< HEAD
+=======
+dependency236.type=UsesDependency
+dependency237.from=DataWildPokemon
+dependency237.to=PokemonEnemy
+dependency237.type=UsesDependency
+dependency238.from=DataWildPokemon
+dependency238.to=DataPokemon
+dependency238.type=UsesDependency
+dependency239.from=DataWildPokemon
+dependency239.to=CursorFight
+dependency236.to=HPPlayerBar
+>>>>>>> b619705d8f6a8eda052863c50fa877cc33c8e71d
 dependency236.type=UsesDependency
 dependency237.from=DataWildPokemon
 dependency237.to=PokemonEnemy
@@ -555,6 +587,11 @@ dependency24.to=ObjectText
 dependency24.type=UsesDependency
 dependency240.from=DataSound
 dependency240.to=WorldCenter
+<<<<<<< HEAD
+=======
+dependency240.from=DataWildPokemon
+dependency240.to=DataPokemon
+>>>>>>> b619705d8f6a8eda052863c50fa877cc33c8e71d
 dependency240.type=UsesDependency
 dependency241.from=DataSound
 dependency241.to=WorldRoute
@@ -588,6 +625,19 @@ dependency25.to=Carpet
 dependency25.type=UsesDependency
 dependency250.from=DataPokemon
 dependency250.to=HPPlayerBar
+<<<<<<< HEAD
+=======
+dependency250.type=UsesDependency
+dependency251.from=DataPokemon
+dependency251.to=DataWildPokemon
+dependency251.type=UsesDependency
+dependency252.from=OverlayFightText
+dependency252.to=WorldWildBattle
+dependency252.type=UsesDependency
+dependency253.from=OverlayFightText
+dependency253.to=DataPokemon
+dependency250.to=HPEnemyBar
+>>>>>>> b619705d8f6a8eda052863c50fa877cc33c8e71d
 dependency250.type=UsesDependency
 dependency251.from=DataPokemon
 dependency251.to=DataWildPokemon
@@ -675,6 +725,14 @@ dependency276.to=DataInventory
 dependency276.type=UsesDependency
 dependency277.from=ButtonPotion
 dependency277.to=WorldWildBattle
+<<<<<<< HEAD
+=======
+dependency277.type=UsesDependency
+dependency278.from=ButtonPotion
+dependency278.to=OverlayFightText
+dependency277.from=ButtonSuperPotion
+dependency277.to=CursorFight
+>>>>>>> b619705d8f6a8eda052863c50fa877cc33c8e71d
 dependency277.type=UsesDependency
 dependency278.from=ButtonPotion
 dependency278.to=OverlayFightText
@@ -689,6 +747,14 @@ dependency280.from=ButtonPotion
 dependency280.to=DataInventory
 dependency280.type=UsesDependency
 dependency281.from=ButtonBlank
+<<<<<<< HEAD
+=======
+dependency281.to=CursorFight
+dependency281.type=UsesDependency
+dependency282.from=ButtonPoke
+dependency282.to=CursorFight
+dependency281.from=ButtonPotion
+>>>>>>> b619705d8f6a8eda052863c50fa877cc33c8e71d
 dependency281.to=CursorFight
 dependency281.type=UsesDependency
 dependency282.from=ButtonPoke
@@ -720,6 +786,16 @@ dependency29.to=DataSound
 dependency29.type=UsesDependency
 dependency290.from=EnemyAttackTackle
 dependency290.to=DataPokemon
+<<<<<<< HEAD
+=======
+dependency290.type=UsesDependency
+dependency291.from=EnemyAttackTackle
+dependency291.to=CursorFight
+dependency291.type=UsesDependency
+dependency292.from=EnemyAttackRockTomb
+dependency292.to=WorldWildBattle
+dependency290.to=DataSound
+>>>>>>> b619705d8f6a8eda052863c50fa877cc33c8e71d
 dependency290.type=UsesDependency
 dependency291.from=EnemyAttackTackle
 dependency291.to=CursorFight
@@ -738,6 +814,16 @@ dependency295.to=DataWildPokemon
 dependency295.type=UsesDependency
 dependency296.from=EnemyAttackRockTomb
 dependency296.to=DataPokemon
+<<<<<<< HEAD
+=======
+dependency296.type=UsesDependency
+dependency297.from=EnemyAttackRockTomb
+dependency297.to=CursorFight
+dependency297.type=UsesDependency
+dependency298.from=BallExplosion
+dependency298.to=WorldWildBattle
+dependency296.to=DataSound
+>>>>>>> b619705d8f6a8eda052863c50fa877cc33c8e71d
 dependency296.type=UsesDependency
 dependency297.from=EnemyAttackRockTomb
 dependency297.to=CursorFight
@@ -778,29 +864,80 @@ dependency306.type=UsesDependency
 dependency307.from=BattlePlayer
 dependency307.to=DataSound
 dependency307.type=UsesDependency
+<<<<<<< HEAD
 dependency308.from=Attacks
 dependency308.to=WorldWildBattle
 dependency308.type=UsesDependency
 dependency309.from=Attacks
+=======
+dependency308.from=AttackFlameThrower
+dependency308.to=WorldWildBattle
+dependency308.type=UsesDependency
+dependency309.from=AttackFlameThrower
+>>>>>>> b619705d8f6a8eda052863c50fa877cc33c8e71d
 dependency309.to=OverlayFightText
 dependency309.type=UsesDependency
 dependency31.from=WorldPlayerRoom
 dependency31.to=PokemonGeodude
 dependency31.type=UsesDependency
+<<<<<<< HEAD
 dependency310.from=Attacks
 dependency310.to=DataSound
 dependency310.type=UsesDependency
 dependency311.from=Attacks
+=======
+dependency310.from=AttackFlameThrower
+dependency310.to=DataSound
+dependency310.type=UsesDependency
+dependency311.from=AttackFlameThrower
+>>>>>>> b619705d8f6a8eda052863c50fa877cc33c8e71d
 dependency311.to=DataPokemon
 dependency311.type=UsesDependency
 dependency312.from=AttackFlameThrower
 dependency312.to=DataWildPokemon
+<<<<<<< HEAD
+=======
+dependency312.type=UsesDependency
+dependency313.from=AttackLowSweep
+dependency313.to=WorldWildBattle
+dependency313.type=UsesDependency
+dependency314.from=AttackLowSweep
+dependency314.to=OverlayFightText
+dependency312.to=DataSound
+>>>>>>> b619705d8f6a8eda052863c50fa877cc33c8e71d
 dependency312.type=UsesDependency
 dependency313.from=AttackLowSweep
 dependency313.to=DataWildPokemon
 dependency313.type=UsesDependency
+<<<<<<< HEAD
 dependency32.from=WorldPlayerRoom
 dependency32.to=Boy
+=======
+dependency314.from=AttackFlameThrower
+dependency314.to=DataWildPokemon
+dependency314.type=UsesDependency
+dependency315.from=AttackLowSweep
+dependency315.to=DataSound
+dependency315.type=UsesDependency
+dependency316.from=AttackLowSweep
+dependency316.to=DataPokemon
+dependency316.type=UsesDependency
+dependency317.from=AttackLowSweep
+dependency317.to=DataWildPokemon
+dependency317.type=UsesDependency
+dependency32.from=WorldPlayerRoom
+dependency32.to=Boy
+dependency317.to=DataSound
+dependency317.type=UsesDependency
+dependency318.from=AttackLowSweep
+dependency318.to=DataPokemon
+dependency318.type=UsesDependency
+dependency319.from=AttackLowSweep
+dependency319.to=DataWildPokemon
+dependency319.type=UsesDependency
+dependency32.from=WorldWildBattle
+dependency32.to=BallExplosion
+>>>>>>> b619705d8f6a8eda052863c50fa877cc33c8e71d
 dependency32.type=UsesDependency
 dependency33.from=WorldPlayerRoom
 dependency33.to=OverlayTextTriangle
@@ -1021,10 +1158,24 @@ dependency98.type=UsesDependency
 dependency99.from=WorldWildBattle
 dependency99.to=ButtonBag
 dependency99.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=737
 editor.fx.0.width=814
 editor.fx.0.x=360
 editor.fx.0.y=28
+=======
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=552
+editor.fx.0.y=100
+height=712
+package.numDependencies=317
+package.numTargets=104
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+>>>>>>> b619705d8f6a8eda052863c50fa877cc33c8e71d
 height=838
 package.numDependencies=313
 package.numTargets=104
@@ -1073,7 +1224,11 @@ target101.y=0
 target102.height=50
 target102.name=Attacks
 target102.showInterface=false
+<<<<<<< HEAD
 target102.type=AbstractTarget
+=======
+target102.type=ClassTarget
+>>>>>>> b619705d8f6a8eda052863c50fa877cc33c8e71d
 target102.width=90
 target102.x=0
 target102.y=0

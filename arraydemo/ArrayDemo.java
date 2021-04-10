@@ -1,6 +1,6 @@
 package arraydemo;
 
-import java.util.Arrays;
+import java.util.Arrays; // This import is neccecary to be able to print the arrays nicely
 
 @SuppressWarnings("unused") // A simple way to get rid of warnings that you don't care about - but not really recommended.
 public final class ArrayDemo {
