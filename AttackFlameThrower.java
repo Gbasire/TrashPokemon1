@@ -4,9 +4,9 @@ public class AttackFlameThrower extends Attacks
     private static final GreenfootImage[] IMAGES = new GreenfootImage[17];
     static
     {
-        for(int i=0; i<IMAGES.length; i++)
+        for(int i = 0; i < IMAGES.length; i++)
         {
-            IMAGES[i] = new GreenfootImage("Attacks/Flamethrower/attack" + (i+1) + ".png");
+            IMAGES[i] = new GreenfootImage("Attacks/Flamethrower/attack" + (i + 1) + ".png");
         }
     }
 
@@ -34,6 +34,7 @@ public class AttackFlameThrower extends Attacks
             return 0.5;
         else if(DataWildPokemon.type == "GRASS" || DataWildPokemon.type == "BUG" || DataWildPokemon.type == "ICE" || DataWildPokemon.type == "STEEL")
             return 2;
-        else return 1;
+        else 
+            return 1;
     }
 }

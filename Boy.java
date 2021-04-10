@@ -29,7 +29,8 @@ public class Boy extends Actor {
     private int time = 4;
     private int startTime = 1;
 
-    public Boy() {
+    public Boy() 
+    {
         if (lastimage == null && isGirl == true)
             lastimage = new GreenfootImage("girlDown.png");
         if (lastimage == null && isGirl == false)
@@ -37,7 +38,8 @@ public class Boy extends Actor {
         setImage(lastimage);
     }
 
-    public void act() {
+    public void act() 
+    {
         setVariables();
         canInteract();
         checkMove();
@@ -47,48 +49,68 @@ public class Boy extends Actor {
         checkBorder();
     }
 
-    public void checkMove() {
-        if (speed > 0) {
-            if (Greenfoot.isKeyDown("left")) {
+    public void checkMove() 
+    {
+        if (speed > 0) 
+        {
+            if (Greenfoot.isKeyDown("left")) 
+            {
                 time--;
                 move(-speed);
-                if (getImage() == left && time == 0) {
+                if (getImage() == left && time == 0) 
+                {
                     time = 5;
                     setImage(leftrun);
-                } else if (time == 0) {
+                } 
+                else if (time == 0) 
+                {
                     time = 5;
                     setImage(left);
                 }
                 checkGrass();
-            } else if (Greenfoot.isKeyDown("right")) {
+            } 
+            else if (Greenfoot.isKeyDown("right")) 
+            {
                 time--;
                 move(speed);
-                if (getImage() == right && time == 0) {
+                if (getImage() == right && time == 0) 
+                {
                     time = 5;
                     setImage(rightrun);
-                } else if (time == 0) {
+                } 
+                else if (time == 0) 
+                {
                     time = 5;
                     setImage(right);
                 }
                 checkGrass();
-            } else if (Greenfoot.isKeyDown("up")) {
+            } 
+            else if (Greenfoot.isKeyDown("up")) 
+            {
                 time--;
                 setLocation(getX(), getY() - speed);
-                if (getImage() == up && time == 0) {
+                if (getImage() == up && time == 0) 
+                {
                     time = 5;
                     setImage(uprun);
-                } else if (time == 0) {
+                } 
+                else if (time == 0) 
+                {
                     time = 5;
                     setImage(up);
                 }
                 checkGrass();
-            } else if (Greenfoot.isKeyDown("down")) {
+            } 
+            else if (Greenfoot.isKeyDown("down")) 
+            {
                 time--;
                 setLocation(getX(), getY() + speed);
-                if (getImage() == down && time == 0) {
+                if (getImage() == down && time == 0) 
+                {
                     time = 5;
                     setImage(downrun);
-                } else if (time == 0) {
+                } 
+                else if (time == 0) {
                     time = 5;
                     setImage(down);
                 }
@@ -97,29 +119,34 @@ public class Boy extends Actor {
         }
     }
 
-    public void checkGrass() {
-        if (isTouching(TallGrass.class)) {
+    public void checkGrass() 
+    {
+        if (isTouching(TallGrass.class)) 
+        {
             launchBattle = Greenfoot.getRandomNumber(200);
             if (launchBattle < 1)
                 startBattle();
-            // if(Greenfoot.getRandomNumber(5) < 1)
-            // getWorld().addObject(new Dust(),getX(),getY());
+            //if(Greenfoot.getRandomNumber(5) < 1)
+                //getWorld().addObject(new Dust(),getX(),getY());
         }
     }
 
-    public void startBattle() {
+    public void startBattle() 
+    {
         getWorld().addObject(new TransitionIn(), 300, 200);
         previousworld = "ROUTE";
         speed = 0;
     }
 
-    public void canInteract() {
+    public void canInteract() 
+    {
         interactTime--;
         if (interactTime == 1)
             canInteract = true;
     }
 
-    public void checkImage() {
+    public void checkImage() 
+    {
         if (getImage() == down || getImage() == downrun)
             lastimage = down;
         else if (getImage() == up || getImage() == uprun)
@@ -130,10 +157,12 @@ public class Boy extends Actor {
             lastimage = right;
     }
 
-    public void checkImageType() {
+    public void checkImageType() 
+    {
         startTime--;
         if (startTime == 0) {
-            if (isGirl == false) {
+            if (isGirl == false) 
+            {
                 down = new GreenfootImage("boyDown.png");
                 downrun = new GreenfootImage("boyDownRun.png");
                 up = new GreenfootImage("boyUp.png");
@@ -142,7 +171,9 @@ public class Boy extends Actor {
                 leftrun = new GreenfootImage("boyLeftRun.png");
                 right = new GreenfootImage("boyRight.png");
                 rightrun = new GreenfootImage("boyRightRun.png");
-            } else {
+            } 
+            else 
+            {
                 down = new GreenfootImage("girlDown.png");
                 downrun = new GreenfootImage("girlDownRun.png");
                 up = new GreenfootImage("girlUp.png");
@@ -167,29 +198,35 @@ public class Boy extends Actor {
     }
 
     public void setVariables() {
-        if (getWorld().getClass() == WorldRoute.class) {
+        if (getWorld().getClass() == WorldRoute.class) 
+        {
             originalX = getX();
             originalY = getY();
         }
-        if (getWorld().getClass() == WorldTown.class) {
+        if (getWorld().getClass() == WorldTown.class) 
+        {
             originalX1 = getX();
             originalY1 = getY();
         }
-        if (getWorld().getClass() == WorldCenter.class) {
+        if (getWorld().getClass() == WorldCenter.class) 
+        {
             originalX2 = getX();
             originalY2 = getY();
         }
-        if (getWorld().getClass() == WorldPlayerRoom.class) {
+        if (getWorld().getClass() == WorldPlayerRoom.class) 
+        {
             originalX3 = getX();
             originalY3 = getY();
         }
-        if (getWorld().getClass() == WorldTest.class) {
+        if (getWorld().getClass() == WorldTest.class) 
+        {
             originalX9 = getX();
             originalY9 = getY();
         }
     }
 
-    public void checkBorder() {
+    public void checkBorder() 
+    {
         if (getWorld().getClass() == WorldRoute.class) {
             if (getY() > 390) {
                 Greenfoot.setWorld(new WorldTown());
@@ -204,7 +241,8 @@ public class Boy extends Actor {
         }
     }
 
-    public void hitBox() {
+    public void hitBox() 
+    {
         if (getWorld().getClass() == WorldRoute.class)
             setLocation(originalX, originalY);
         else if (getWorld().getClass() == WorldTown.class)

@@ -8,7 +8,6 @@ public abstract class Attacks extends Battle
     public final int accuracy;
     public final String category;
     public final String type;
-    public double effectiveness;
 
     private static final int MAX_TIME = 49;
     private int time = MAX_TIME;
@@ -31,20 +30,22 @@ public abstract class Attacks extends Battle
         time--;
         if(time >= 48)
         {
-            if(DataSound.effectAttackFlameThrower.isPlaying() == false) 
+            if(name == "FlameThrower") 
                 DataSound.effectAttackFlameThrower.play();
+            else if(name == "LowSweep")
+                DataSound.effectAttackLowSweep.play();
             setImage(getImage(1));
             ((WorldWildBattle)getWorld()).overlayFightText();
             OverlayFightText oft = getWorld().getObjects(OverlayFightText.class).get(0);
-            oft.playerattack = "FlameThrower";
+            oft.playerattack = name;
             oft.playerattacktime = 150;
-            oft.playereffective = effectiveness;
+            oft.playereffective = checkEnemyPokemonAndGetEffectiveness();
             DataPokemon.attackpower = power;
             DataPokemon.attackpp = pp;
             DataPokemon.attackaccuracy = accuracy;
             DataPokemon.attackcategory = category;
             DataPokemon.attacktype = type;
-            DataPokemon.attackeffectiveness = effectiveness;
+            DataPokemon.attackeffectiveness = checkEnemyPokemonAndGetEffectiveness();
         }
         else if(time <= 0)
             getWorld().removeObject(this);

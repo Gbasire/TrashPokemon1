@@ -6,6 +6,7 @@ public class ObjectTreeBottom extends ObjectSimple
     }
     public void act()
     {
-
+        checkPlayer();
+        collide();
     }
 }
