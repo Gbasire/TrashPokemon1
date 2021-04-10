@@ -8,6 +8,6 @@ public class TallGrass extends ObjectSpecial
     }
     public void act()
     {
-        
+
     }
 }

@@ -7,6 +7,6 @@ public class AttacksEnemy extends Battle
     public String sound;
     public void act()
     {
-        
+
     }
 }

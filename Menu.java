@@ -3,6 +3,6 @@ public class Menu extends Actor
 {
     public void act()
     {
-        
+
     }
 }

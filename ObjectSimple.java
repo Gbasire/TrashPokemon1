@@ -19,7 +19,7 @@ public class ObjectSimple extends WorldObjects
     public static GreenfootImage buildHomePlayerRight = new GreenfootImage("Objects/Builds/HomePlayer/HomePlayerRight.png");
     public ObjectSimple()
     {
-        
+
     }
     public ObjectSimple(GreenfootImage object)
     {

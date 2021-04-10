@@ -6,12 +6,9 @@ public class WorldObjects extends Actor
     public int objectCenter;
     public WorldObjects()
     {
-        
+
     }
-    public void act()
-    {
-        
-    }
+
     public void checkPlayer()
     {
         Boy boy = (Boy)getWorld().getObjects(Boy.class).get(0);

@@ -13,6 +13,6 @@ public class PokemonGeodude extends Pokemons
     public final String attack2 = "TACKLE";
     public void act()
     {
-        
+
     }
 }

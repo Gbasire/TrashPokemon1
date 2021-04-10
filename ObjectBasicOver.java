@@ -5,7 +5,7 @@ public class ObjectBasicOver extends WorldObjects
     static GreenfootImage buildHomePlayerMiddle = new GreenfootImage("Objects/Builds/HomePlayer/HomePlayerMiddle.png");
     public ObjectBasicOver()
     {
-        
+
     }
     public ObjectBasicOver(GreenfootImage object)
     {

@@ -13,6 +13,6 @@ public class PokemonEmboar extends Pokemons
     public final String attack2 = "LOWSWEEP";
     public void act()
     {
-        
+
     }
 }

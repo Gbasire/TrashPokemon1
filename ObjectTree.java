@@ -6,6 +6,6 @@ public class ObjectTree extends ObjectSimple
     }
     public void act()
     {
-        
+
     }
 }

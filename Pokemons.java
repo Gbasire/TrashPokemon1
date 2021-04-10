@@ -10,6 +10,6 @@ public class Pokemons extends Battle
     public String type;
     public void act()
     {
-        
+
     }
 }
