@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=WorldObjects
+comment1.params=
+comment1.target=WorldObjects()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ checkPlayer()
+comment4.params=
+comment4.target=void\ collide()
+comment5.params=
+comment5.target=void\ overlayText()
+numComments=6

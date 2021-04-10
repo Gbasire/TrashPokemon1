@@ -1,0 +1,5 @@
+<dependency>
+    <groupId>com.github.rccookie</groupId>
+    <artifactId>greenfoot-source</artifactId>
+    <version>3.6.1.1</version>
+</dependency>

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=DataInventory
+comment1.params=
+comment1.target=void\ act()
+comment2.params=object\ number
+comment2.target=void\ foundObject(java.lang.String,\ int)
+comment3.params=object\ number
+comment3.target=void\ usedObject(java.lang.String,\ int)
+comment4.params=
+comment4.target=void\ sendData()
+numComments=5

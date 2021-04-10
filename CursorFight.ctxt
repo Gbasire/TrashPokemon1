@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=CursorFight
+comment1.params=
+comment1.target=CursorFight()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ checkMove()
+comment4.params=
+comment4.target=void\ checkAction()
+comment5.params=
+comment5.target=void\ setMenu()
+comment6.params=
+comment6.target=void\ infoTextMenu()
+comment7.params=
+comment7.target=void\ cursorMoveSound()
+comment8.params=
+comment8.target=void\ cursorSelectSound()
+comment9.params=
+comment9.target=void\ setSurpriseRun()
+numComments=10

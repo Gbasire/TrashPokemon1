@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=MenuCursorGender
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=void\ checkMove()
+comment3.params=
+comment3.target=void\ checkButtons()
+comment4.params=
+comment4.target=void\ cursorMoveSound()
+comment5.params=
+comment5.target=void\ cursorSelectSound()
+numComments=6
