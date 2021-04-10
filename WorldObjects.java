@@ -25,25 +25,7 @@ public class WorldObjects extends Actor
     }
     public void overlayText()
     {
-        if(this.getWorld().getClass() == WorldTest.class)
-        {
-            ((WorldTest)getWorld()).overlayText();
-        }
-        else if(this.getWorld().getClass() == WorldRoute.class)
-        {
-            ((WorldRoute)getWorld()).overlayText();
-        }
-        else if(this.getWorld().getClass() == WorldTown.class)
-        {
-            ((WorldTown)getWorld()).overlayText();
-        }
-        else if(this.getWorld().getClass() == WorldCenter.class)
-        {
-            ((WorldCenter)getWorld()).overlayText();
-        }
-        else if(this.getWorld().getClass() == WorldPlayerRoom.class)
-        {
-            ((WorldPlayerRoom)getWorld()).overlayText();
-        }
+        if(getWorld() instanceof OverlayWorld)
+            ((OverlayWorld)getWorld()).overlayText();
     }
 }
