@@ -2,7 +2,7 @@ import greenfoot.GreenfootImage;
 
 public class ButtonsMenu extends Overlay
 {
-    private final GreenfootImage image1, image2;
+    final GreenfootImage image1, image2;
 
     public ButtonsMenu(GreenfootImage image1, GreenfootImage image2)
     {

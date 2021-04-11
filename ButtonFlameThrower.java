@@ -1,46 +1,27 @@
+import java.util.function.Supplier;
+
 import greenfoot.*;
 public class ButtonFlameThrower extends ButtonsFight
 {
-    GreenfootImage image1 = new GreenfootImage("Buttons/AttackButtons/FlameThrower.png");
-    GreenfootImage image2 = new GreenfootImage("Buttons/AttackButtons/FlameThrower1.png");
-    private int time = 10;
-    public String type = "FIRE";
-    public int power = 95;
-    public int pp = 15;
-    public boolean canattack = false;
-    public void act()
+    public static final GreenfootImage image1 = new GreenfootImage("Buttons/AttackButtons/FlameThrower.png");
+    public static final GreenfootImage image2 = new GreenfootImage("Buttons/AttackButtons/FlameThrower1.png");
+
+    public ButtonFlameThrower()
     {
-        checkCursor();
-        checkAction();
-        time--;
-        if(time == 0)
-            canattack = true;
-    }
-    public void checkCursor()
-    {
-        if(isTouching(CursorFight.class))
-            setImage(image2);
-        else
-            setImage(image1);
-        if(isTouching(CursorFight.class))
+        // This is the long version of "passing a method as argument". As you can see we
+        // actually pass an object, a "Supplier". Supplier is an interface that has just
+        // a single method, "get()". (Hold CTRL and click onto Supplier to see the source)
+        //
+        // When we create a new Supplier we have to specify an implementation for that
+        // method because it is abstract, so that's what is inside the curly brackets.
+        //
+        // This is obviously a lot harder to read and also simply a lot longer than a lamda
+        // statement.
+        super(image1, image2, "FIRE", 95, 15, new Supplier<>()
         {
-            getWorld().showText(type, 523, 440);
-            getWorld().showText(power + " power", 524, 460);
-        }
-    }
-    public void checkAction()
-    {
-        if(isTouching(CursorFight.class) && Greenfoot.isKeyDown("enter") && canattack == true)
-        {
-            CursorFight.cursorSelectSound();
-            getWorld().addObject(new AttackFlameThrower(), 300, 300);
-            CursorFight.isFighting = true;
-            canattack = false;
-        }
-    }
-    public void setAttackTime()
-    {
-        time = 10;
-        canattack = false;
+            public Attacks get() {
+                return new AttackFlameThrower();
+            };
+        });
     }
 }
