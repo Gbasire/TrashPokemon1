@@ -37,4 +37,10 @@ public class AttackLowSweep extends Attacks
         else 
             return 1;
     }
+
+    @Override
+    public GreenfootSound getAttackSound()
+    {
+        return DataSound.effectAttackLowSweep;
+    }
 }

@@ -1,4 +1,5 @@
 import greenfoot.GreenfootImage;
+import greenfoot.GreenfootSound;
 
 public abstract class Attacks extends Battle
 {
@@ -26,14 +27,10 @@ public abstract class Attacks extends Battle
 
     public void act()
     {
-        checkEnemyPokemonAndGetEffectiveness();
         time--;
         if(time >= 48)
         {
-            if(name == "FlameThrower") 
-                DataSound.effectAttackFlameThrower.play();
-            else if(name == "LowSweep")
-                DataSound.effectAttackLowSweep.play();
+            getAttackSound().play();
             setImage(getImage(1));
             ((WorldWildBattle)getWorld()).overlayFightText();
             OverlayFightText oft = getWorld().getObjects(OverlayFightText.class).get(0);
@@ -56,6 +53,8 @@ public abstract class Attacks extends Battle
             setImage(getImage(Math.min(imageNr, imageCount - 1)));
         }
     }
+
+    public abstract GreenfootSound getAttackSound();
 
     public abstract double checkEnemyPokemonAndGetEffectiveness();
 
