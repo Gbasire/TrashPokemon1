@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=ObjectSimple
-comment1.params=
-comment1.target=ObjectSimple()
-comment2.params=object
-comment2.target=ObjectSimple(greenfoot.GreenfootImage)
-comment3.params=
-comment3.target=void\ act()
-numComments=4

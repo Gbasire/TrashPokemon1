@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=ButtonBag
-comment1.params=
-comment1.target=ButtonBag()
-comment2.params=
-comment2.target=void\ act()
-comment3.params=
-comment3.target=void\ checkCursor()
-numComments=4

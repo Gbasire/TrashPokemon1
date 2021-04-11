@@ -1,0 +1,6 @@
+# Don't sync the compiled class and ctxt files - Greenfoot will generate them automatically
+# and we won't actively modify them. Plus, they may differ between Greenfoot versions while
+# the source files are fine.
+
+*.class
+*.ctxt
